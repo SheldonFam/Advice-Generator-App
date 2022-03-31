@@ -44,18 +44,39 @@ body {
   text-align: center;
   color: hsl(193, 38%, 86%);
 }
+
 .bottom_area {
   height: 50px;
+  background-image: url(./images/pattern-divider-desktop.svg);
+  background-repeat: no-repeat;
 }
 
 button {
   position: relative;
   padding: 20px;
   left: 50%;
-  bottom: -50px;
+  bottom: -70px;
   transform: translate(-50%, -50%);
   border-style: none;
   border-radius: 90px;
   background-color: hsl(150, 100%, 66%);
   cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    max-width: 300px;
+  }
+
+  .bottom_area {
+    background-image: url(./images/pattern-divider-mobile.svg);
+    background-repeat: no-repeat;
+  }
 }
