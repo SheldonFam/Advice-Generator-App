@@ -36,7 +36,7 @@ body {
 }
 
 .advice_generator {
-  margin: 30px 20px;
+  margin: 5px 10px 20px 10px;
 }
 
 .advice_generator p {
@@ -46,21 +46,27 @@ body {
 }
 
 .bottom_area {
-  height: 50px;
   background-image: url(./images/pattern-divider-desktop.svg);
   background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
 }
 
 button {
   position: relative;
   padding: 20px;
   left: 50%;
-  bottom: -70px;
+  bottom: -105px;
   transform: translate(-50%, -50%);
   border-style: none;
-  border-radius: 90px;
+  border-radius: 60px;
   background-color: hsl(150, 100%, 66%);
   cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 2px 2px 30px hsl(150, 100%, 70%);
+  transition-duration: 0.2s;
 }
 
 @media (max-width: 400px) {
